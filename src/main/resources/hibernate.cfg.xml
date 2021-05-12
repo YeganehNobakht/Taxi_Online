@@ -1,0 +1,14 @@
+<hibernate-configuration >
+    <session-factory>
+        <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+        <property name="connection.url">jdbc:mysql://localhost:3306/contactmanager</property>
+        <property name="connection.username">root</property>
+        <property name="connection.password">root</property>
+        <property name="hibernate.hbm2ddl.auto">create</property>
+<!--        <property name="hibernate.hbm2ddl.auto">update</property>-->
+        <property name="show_sql">true</property>
+        <mapping class="maktabsharif.data.domain.Car"/>
+
+
+    </session-factory>
+</hibernate-configuration>
